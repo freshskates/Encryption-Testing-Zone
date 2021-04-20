@@ -1,8 +1,11 @@
 """
+
 DES AES and 3DES Testing Encryption Zone
 
 Margin of Error: +- 0.05s
+
 """
+
 from des import DesKey
 import pyaes
 from functools import wraps
@@ -11,7 +14,7 @@ import time
 
 class MyTools:
     @staticmethod
-    def info(name):
+    def info(name: str):
         def decorator(func):
             def wrapper(*args, **kwargs):
                 start = time.perf_counter()
@@ -23,24 +26,24 @@ class MyTools:
         return decorator
 
     @staticmethod
-    def aes_test_zone(keys, text):
-        for i in keys:
-            temp = AES_Crypt(keys[i], text)
-            print("Testing key: \t{}: {}".format(i, keys[i]))
-            print("Plain text: \t{}\n".format(text))
-            print("Encrypted: \t{}\n".format(temp.encrypt()))
-            print("Decrypted: \t{}\n".format(
-                temp.decrypt()), end='------------------\n')
+    def print_stats(key, label, temp_object):
+        print("Testing key: \t{}: {}".format(label, key))
+        print("Plain text: \t{}\n".format(text))
+        print("Encrypted: \t{}\n".format(temp_object.encrypt()))
+        print("Decrypted: \t{}\n".format(
+            temp_object.decrypt()), end='------------------\n')
 
     @staticmethod
-    def des_test_zone(keys, text):
+    def aes_test_zone(keys: str, text: str):
+        for i in keys:
+            temp = AES_Crypt(keys[i], text)
+            MyTools.print_stats(keys[i], i, temp)
+
+    @staticmethod
+    def des_test_zone(keys: str, text: str):
         for i in keys:
             temp = DES_Crypt(keys[i], text)
-            print("Testing key: \t{}: {}".format(i, keys[i]))
-            print("Plain text: \t{}\n".format(text))
-            print("Encrypted: \t{}\n".format(temp.encrypt()))
-            print("Decrypted: \t{}\n".format(
-                temp.decrypt()), end='------------------\n')
+            MyTools.print_stats(keys[i], i, temp)
 
 
 class DES_Crypt():
