@@ -1,3 +1,7 @@
+"""
+DES AES and 3DES Testing Encryption Zone
+Margin of Error: +- 0.01s
+"""
 from des import DesKey
 from functools import wraps
 import time
