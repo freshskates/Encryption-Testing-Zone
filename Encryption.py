@@ -18,7 +18,7 @@ class MyTools:
                 result = func(*args, **kwargs)
                 end = time.perf_counter()
                 print(f"{name} =>\tElapsed: {end - start:0.6f} seconds")
-                return result
+                return (result, end - start)
             return wrapper
         return decorator
 
@@ -31,16 +31,45 @@ class MyTools:
             temp_object.decrypt()), end='------------------\n')
 
     @staticmethod
+    def dump_stats(info, filename):
+        with open('dump.txt', 'w') as f:
+            f.write(info)
+
+    @staticmethod
+    def Builder(key, label, temp_object, build):
+        build += "Testing key:\t{} => {}\n".format(label, key)
+        build += "Plain text:\t\t{}\n".format(text)
+        encrypted, time = temp_object.encrypt()
+        build += "Encrypted:\t\t{}\n".format(encrypted)
+        build += "Delta Time =>\t{}s\n".format(time)
+        decrypted, time2 = temp_object.decrypt()
+        build += "Decrypted:\t\t{}\n".format(decrypted)
+        build += "Delta Time =>\t{}s\n------------------\n".format(time2)
+
+        return build
+
+    @staticmethod
     def aes_test_zone(keys: str, text: str):
         for i in keys:
             temp = AES_Crypt(keys[i], text)
             MyTools.print_stats(keys[i], i, temp)
 
     @staticmethod
-    def des_test_zone(keys: str, text: str):
+    def des_test_zone(keys: str, text: str, dump=False):
         for i in keys:
             temp = DES_Crypt(keys[i], text)
             MyTools.print_stats(keys[i], i, temp)
+
+    @staticmethod
+    def dump(keys: str, text: str, filename: str):
+        build = ""
+        for i in keys:
+            aes_temp = AES_Crypt(keys[i], text)
+            build = MyTools.Builder(keys[i], i, aes_temp, build)
+            des_temp = DES_Crypt(keys[i], text)
+            build = MyTools.Builder(keys[i], i, des_temp, build)
+
+        MyTools.dump_stats(build, filename)
 
 
 class DES_Crypt():
@@ -97,19 +126,20 @@ if __name__ == "__main__":
     }
 
     byte16 = {
-        "key0_16byte": "m2G2hb*XVnC#&=:@",
-        "key1_16byte": "2:[cNLKX89N#j9^+",
-        "key2_16byte": "+D8eS'K#8*25(My$",
-        "key3_16byte": "Z;Y2Fe.PNx8h~]eV",
-        "key4_16byte": "pt4YNLb9+M^m^w**",
-        "key5_16byte": "x4eRGWXFv56m=E-x",
-        "key6_16byte": "wvyEc@Ub9-AXSj3%",
-        "key7_16byte": "&vb!FBFp=SWZ4k$+",
-        "key8_16byte": "N7QbKdm2*3?meVKk",
-        "key9_16byte": "YQ3!@2vr6y2!4dV9",
+        "key0_16_bytes": "m2G2hb*XVnC#&=:@",
+        "key1_16_bytes": "2:[cNLKX89N#j9^+",
+        "key2_16_bytes": "+D8eS'K#8*25(My$",
+        "key3_16_bytes": "Z;Y2Fe.PNx8h~]eV",
+        "key4_16_bytes": "pt4YNLb9+M^m^w**",
+        "key5_16_bytes": "x4eRGWXFv56m=E-x",
+        "key6_16_bytes": "wvyEc@Ub9-AXSj3%",
+        "key7_16_bytes": "&vb!FBFp=SWZ4k$+",
+        "key8_16_bytes": "N7QbKdm2*3?meVKk",
+        "key9_16_bytes": "YQ3!@2vr6y2!4dV9",
     }
     text = "emin and robert project, testing for speed"
 
     MyTools.aes_test_zone(byte16, text)
     MyTools.des_test_zone(byte16, text)
     MyTools.des_test_zone(keys, text)
+    MyTools.dump(byte16, text, "dump.txt")
