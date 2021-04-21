@@ -1,14 +1,11 @@
 """
-
 DES AES and 3DES Testing Encryption Zone
 
 Margin of Error: +- 0.05s
-
 """
 
 from des import DesKey
 import pyaes
-from functools import wraps
 import time
 
 
@@ -49,6 +46,10 @@ class MyTools:
 class DES_Crypt():
 
     def __init__(self, key: str, text: str):
+        """
+        :key: private key, will be encoded into bytes
+        :text: plaintext, will be encoded into bytes
+        """
         self.key = DesKey(bytes(key.encode('utf-8')))
         self.text = bytes(text.encode('utf-8'))
 
@@ -66,6 +67,10 @@ class DES_Crypt():
 class AES_Crypt():
 
     def __init__(self, key: str, text: str):
+        """
+        :key: private key
+        :text: plaintext, will be encoded into bytes
+        """
         self.key = key.encode('utf-8')
         self.text = bytes(text.encode('utf-8'))
 
