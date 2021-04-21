@@ -10,6 +10,12 @@ import time
 
 
 class MyTools:
+    data = {
+        "max": {
+            "Testing key"
+        }
+    }
+
     @staticmethod
     def info(name: str):
         def decorator(func):
@@ -36,7 +42,8 @@ class MyTools:
             f.write(info)
 
     @staticmethod
-    def Builder(key, label, temp_object, build):
+    def Builder(eType, key, label, temp_object, build):
+        build += "Type:\t\t\t{}\n".format(eType)
         build += "Testing key:\t{} => {}\n".format(label, key)
         build += "Plain text:\t\t{}\n".format(text)
         encrypted, time = temp_object.encrypt()
@@ -65,9 +72,10 @@ class MyTools:
         build = ""
         for i in keys:
             aes_temp = AES_Crypt(keys[i], text)
-            build = MyTools.Builder(keys[i], i, aes_temp, build)
+            build = MyTools.Builder("AES", keys[i], i, aes_temp, build)
             des_temp = DES_Crypt(keys[i], text)
-            build = MyTools.Builder(keys[i], i, des_temp, build)
+            des_type = "DES Single" if des_temp.is_single() else "DES Triple"
+            build = MyTools.Builder(des_type, keys[i], i, des_temp, build)
 
         MyTools.dump_stats(build, filename)
 
@@ -91,6 +99,9 @@ class DES_Crypt():
     def decrypt(self):
         self.decrypted = self.key.decrypt(self.encrypted, padding=True)
         return self.decrypted
+
+    def is_single(self):
+        return self.key.is_single()
 
 
 class AES_Crypt():

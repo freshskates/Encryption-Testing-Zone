@@ -1,140 +1,160 @@
+Type:			AES
 Testing key:	key0_16_bytes => m2G2hb*XVnC#&=:@
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b"\x1e\x83\t\x0ft\xb8\xb9\x10\x01_\x1b\xb8u\xf6\xf0F4\x965\x18i\x91DZ\xf8Xx\x97'\xd0<Xc\x04\r\xec9\xefo^\x86\x9d"
-Delta Time =>	0.00039759999999999796s
+Delta Time =>	0.00040450000000002984s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.00037970000000009385s
+Delta Time =>	0.00035320000000005347s
 ------------------
+Type:			DES Triple
 Testing key:	key0_16_bytes => m2G2hb*XVnC#&=:@
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'9\x90@\xa0\x124~e\xc1p! J\xab\xf0]\x1d1\xe8$\xb4\xbc\xf3\xb0\xe7\xf5m\xb30d\xa8\xb9e\x91\xae\xd7L_M\xcd\xbe"v5\xca\xa7\x1eL'
-Delta Time =>	0.009035600000000032s
+Delta Time =>	0.00901530000000006s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.009100700000000073s
+Delta Time =>	0.00892409999999999s
 ------------------
+Type:			AES
 Testing key:	key1_16_bytes => 2:[cNLKX89N#j9^+
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\x1e\xc7\xad_ja\x15\xa3\xbf\x99[N\xb4\xf0\x96\x9e\xc3\x06N\x86\xe6/\xd2.\x948\xd7SV\xc1\xb7\xd3\x04\x82y)\x14\x83\xbc\xfc\xec\xa4'
-Delta Time =>	0.0004039000000000126s
+Delta Time =>	0.0004009999999999847s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.0005062000000000122s
+Delta Time =>	0.0003540999999999128s
 ------------------
+Type:			DES Triple
 Testing key:	key1_16_bytes => 2:[cNLKX89N#j9^+
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\xcc\xd5\xea\xd3\xbd\x0b\xa8\xcc\x8b\x00\x13Hc\x0f\\Y\x18\xf6\xbe\x1er1\xd2#\xdbS\x8d{y 8\x84\x18E?|r\x88\xceB\n\x04\xa1\xa4R\xd7\x9d\xc7'
-Delta Time =>	0.016171400000000058s
+Delta Time =>	0.00898359999999998s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.012322900000000025s
+Delta Time =>	0.008988499999999955s
 ------------------
+Type:			AES
 Testing key:	key2_16_bytes => +D8eS'K#8*25(My$
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'2\x10\xb2\xbd\x9bX\x9b<e\xd8\xdan+5\xf6\xe9f\xd5?\xf4\xa9-\xc5\x7f\xbd\xea\xd4\x08Pn\xdc\xa8\xeb[\xd9\x8c\x9c\xd3\x8d\x90\xccF'
-Delta Time =>	0.0004174000000000122s
+Delta Time =>	0.0003961999999999577s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.0003887000000000196s
+Delta Time =>	0.00035799999999996945s
 ------------------
+Type:			DES Triple
 Testing key:	key2_16_bytes => +D8eS'K#8*25(My$
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'x/\xb6\xcc\x1e\xfb4z6\xd3\x12I\x83xn;\xae\n\xb5\xce\x19j\x96A\xc3\xe1/]\xcb\xd0\x994\x01ZL[\xf0\xeb\x0e\x964\xf2\xab\xfe\xdfX\xa0\xec'
-Delta Time =>	0.011565500000000006s
+Delta Time =>	0.008921899999999927s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.011472600000000055s
+Delta Time =>	0.008987599999999984s
 ------------------
+Type:			AES
 Testing key:	key3_16_bytes => Z;Y2Fe.PNx8h~]eV
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\x12\x85\xad\xaa\x88:\xae\xf6\xec\xe4\x98X\xd8\xcd4\\ym\x1c1)\xb0\x18|\x7f]\xda\xfcr\xacGiXJ\xae\xd2T\x9d\x07\x02\x07\x8e'
-Delta Time =>	0.0005298000000000247s
+Delta Time =>	0.00039169999999999483s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.00042600000000003746s
+Delta Time =>	0.00035959999999990444s
 ------------------
+Type:			DES Triple
 Testing key:	key3_16_bytes => Z;Y2Fe.PNx8h~]eV
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\xbf=\xf2)\xcf\x88Bg\xe4lk\x8dQ\x00n\xb6\xa4Ja)\xa9\xca\\/S\xa8\xd0\xae\x9e\xcaR\xa7\x14\x8d\xde\x9d\xbdmn\x07\x19w2\x1ao\x19\xca~'
-Delta Time =>	0.009006999999999987s
+Delta Time =>	0.012064100000000022s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.009185200000000004s
+Delta Time =>	0.011726899999999985s
 ------------------
+Type:			AES
 Testing key:	key4_16_bytes => pt4YNLb9+M^m^w**
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'2\x015/\x99\xcf\xf3[\xdb\xe2DQs\x0c\xf3\xc0jL\x993\xb8\xf8\xbdkM\xa1gyX\xb2\xb1\xab\x81=\xe6\xca\xf2\xfc\x9c[L\xdc'
-Delta Time =>	0.00042949999999997157s
+Delta Time =>	0.00043199999999998795s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.00038039999999994745s
+Delta Time =>	0.00040119999999999045s
 ------------------
+Type:			DES Triple
 Testing key:	key4_16_bytes => pt4YNLb9+M^m^w**
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\xe6*|\x00\x03\xc8rh\xf49\x1c\xed\xfbC#\t\x00\xdd\x92\xdb\x97$\x8f\x04\xfa\xd6\xfd\xd4h\tk\xdf\xe3\x87\x12\xc0\xfe\x90s\xefd\xa2\xbc`qU\xa0\x8c'
-Delta Time =>	0.009008999999999934s
+Delta Time =>	0.009141399999999966s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.009086099999999986s
+Delta Time =>	0.008994999999999975s
 ------------------
+Type:			AES
 Testing key:	key5_16_bytes => x4eRGWXFv56m=E-x
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\xa8\xda=6s?\xcb\x95\xc6T\xafSz\xd9\x87\x8eG\xd90\x0bk\xde`1\xcd\x8aw\xc9\xa6f\x9fDXP\x92\xdeA\xdb\x1bR\xca='
-Delta Time =>	0.000556299999999954s
+Delta Time =>	0.0003990000000000382s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.0005262000000000322s
+Delta Time =>	0.0003602999999999801s
 ------------------
+Type:			DES Triple
 Testing key:	key5_16_bytes => x4eRGWXFv56m=E-x
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\xc9\xad\xa1\xc3\x06\xdeSKY\xb1\xd1\x93>\x85\x99\x02Qi;\xd7\xa1\xa9+B\xe2>\x9aL\xa9J\x14\xb8\xd20\xff\xc0\x1a\xc0[\x1d\x95X\xfbo-\xc2p '
-Delta Time =>	0.011925400000000086s
+Delta Time =>	0.009481399999999973s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.010205199999999914s
+Delta Time =>	0.008965200000000006s
 ------------------
+Type:			AES
 Testing key:	key6_16_bytes => wvyEc@Ub9-AXSj3%
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b"\x18\x1a\x8e\xc0\xf9D(vX\x9d*o\xbc\x84\\\xa4Q\xb9J\xdd.'Qs)\xe2\x96\x0ej\xb5x\xfa\xdaM\xc4\xadb\xfb\xe8v\x03\xb2"
-Delta Time =>	0.00045279999999991993s
+Delta Time =>	0.0003910000000000302s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.00040090000000003734s
+Delta Time =>	0.0003656999999999133s
 ------------------
+Type:			DES Triple
 Testing key:	key6_16_bytes => wvyEc@Ub9-AXSj3%
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b"\xf9\x0b7\xd7u\xb2\x0ee\x7f\xb9'\xef\x1b\xc0\xf60)?\xf1\xbe\x9b\x1e\xf8h\x11Z\x88\xb6w\xf5}\xe8\xaf\xa6\x1fL\x1cfws\x1c8t\x14BE{\x87"
-Delta Time =>	0.008903299999999836s
+Delta Time =>	0.009131199999999895s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.009074899999999886s
+Delta Time =>	0.008907600000000127s
 ------------------
+Type:			AES
 Testing key:	key7_16_bytes => &vb!FBFp=SWZ4k$+
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b"\xfb\xd9\xacZ\xfe!\xc1\xd0Y\xe3\xda\xa3k\xefW[\xd74\xc52;@W\xbc'\xe1\xcd\xee\x8b*\xdb\xa6\xfb\x8ft0\x8b\x04\xbe\x8fb\xa6"
-Delta Time =>	0.0004047000000000356s
+Delta Time =>	0.0005327999999999999s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.00037260000000016724s
+Delta Time =>	0.0004074000000000577s
 ------------------
+Type:			DES Triple
 Testing key:	key7_16_bytes => &vb!FBFp=SWZ4k$+
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\x02\xc7u\xe1\x0co\xf3r\xf8\x97A\xbd\x17\x8a\xeb\xb2\xe1>e\xb7L\xa9w5q"\x01\x12\xef\x15\xdf\xa4\xcc\xe3"\xf9\x03\x9f\x90|`\xd6\r\xc5S}\x7f\xf6'
-Delta Time =>	0.008893700000000004s
+Delta Time =>	0.008988400000000007s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.00889770000000012s
+Delta Time =>	0.009065099999999937s
 ------------------
+Type:			AES
 Testing key:	key8_16_bytes => N7QbKdm2*3?meVKk
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b"\xd4\x0e\x14\x0f'\xb1\x87-\xc1\xdc\xf4\xae#\x02UG\xc8)\x8c\\-\xda\xae0\x8fK\xd7\xc1T,\xdf6\xe7\xd3\xa5\xe9a<\xc6B\xfc\xf6"
-Delta Time =>	0.0003963000000000161s
+Delta Time =>	0.00039429999999995857s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.00035349999999989556s
+Delta Time =>	0.0003714999999999691s
 ------------------
+Type:			DES Triple
 Testing key:	key8_16_bytes => N7QbKdm2*3?meVKk
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'ITm\xff\x89H\xe3\xd2\xf0*\xe4\x84+\x87Q\x88|\xd8;\xf0$\x02Z\x10\xe4\xa7\x0c\xb2{\xe7 7\xbb\xad\xf2\x1bk\x02\x8e\xbf\xb6\xc5\xeb\x15\xc7\xb5c\xae'
-Delta Time =>	0.008981200000000022s
+Delta Time =>	0.008832900000000032s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.009064300000000136s
+Delta Time =>	0.009023899999999863s
 ------------------
+Type:			AES
 Testing key:	key9_16_bytes => YQ3!@2vr6y2!4dV9
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\xd8q\xae\x01\xb1J%\x9b\xa9\xf6r|\xd3\xfe\xcf\x17\x00\xc8\xfe\xac\xba\xc79NG[G\xa2?\x13Q\x17\xbb\xab\xa4\x05e\xe4\x04\xf3\xa4\x8c'
-Delta Time =>	0.0003969999999999807s
+Delta Time =>	0.0003967000000000276s
 Decrypted:		emin and robert project, testing for speed
-Delta Time =>	0.00035919999999989294s
+Delta Time =>	0.0003900000000001125s
 ------------------
+Type:			DES Triple
 Testing key:	key9_16_bytes => YQ3!@2vr6y2!4dV9
 Plain text:		emin and robert project, testing for speed
 Encrypted:		b'\xd2\x15\xeb\xb2\xeb\xd0\x00\xdf\x07EW\xfc\xd7QN\x7f_\xc6\x98\r\xb6\xdf\xe2z,|\xeb!\xe0\xe0\xaa\xb1{\x14U\x08\xf0k\xfe\x9b\x7f\xdc\xfd\xef\x9d\x14\x83\xcb'
-Delta Time =>	0.008940100000000006s
+Delta Time =>	0.008976499999999943s
 Decrypted:		b'emin and robert project, testing for speed'
-Delta Time =>	0.008920199999999934s
+Delta Time =>	0.008884200000000009s
 ------------------
