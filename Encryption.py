@@ -1,10 +1,6 @@
 """
 DES AES and 3DES Testing Encryption Zone
 Margin of Error: +- 0.05s
-
-
-
-
 """
 from des import DesKey
 import pyaes
