@@ -110,7 +110,7 @@ class AES_Crypt():
     @MyTools.info("T encrypt")
     def encrypt(self):
         aes = pyaes.AESModeOfOperationCTR(self.key)
-        self.encrypted = aes.encrypt(text)
+        self.encrypted = aes.encrypt(self.text)
         return self.encrypted
 
     @MyTools.info("T decrypt")
@@ -119,14 +119,12 @@ class AES_Crypt():
         self.decrypted = aes.decrypt(self.encrypted).decode('utf-8')
         return self.decrypted
 
-
-if __name__ == "__main__":
-
+def main():
     keys = {
-        "single": "some key",
-        "triple": "a key for TRIPLE",
-        "bytes_24": "a 24-byte key for TRIPLE",
-        "realistic_key": "1234567812345678REAL_KEY",
+    "single": "some key",
+    "triple": "a key for TRIPLE",
+    "bytes_24": "a 24-byte key for TRIPLE",
+    "realistic_key": "1234567812345678REAL_KEY",
     }
 
     byte16 = {
@@ -147,3 +145,7 @@ if __name__ == "__main__":
     MyTools.des_test_zone(byte16, text)
     MyTools.des_test_zone(keys, text)
     MyTools.dump(byte16, text, "dump.txt")
+
+if __name__ == "__main__":
+    main()
+
