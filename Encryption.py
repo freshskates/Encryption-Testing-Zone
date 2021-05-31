@@ -147,5 +147,6 @@ def main():
     MyTools.dump(byte16, text, "dump.txt")
 
 if __name__ == "__main__":
+    
     main()
 
