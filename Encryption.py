@@ -8,11 +8,6 @@ import time
 
 
 class MyTools:
-    data = {
-        "max": {
-            "Testing key"
-        }
-    }
 
     @staticmethod
     def info(name: str):
