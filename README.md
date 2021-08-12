@@ -1,2 +1,3 @@
 # Encryption-Testing-Zone
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e0ad9a23f3664bfcb6822fac4c529e09)](https://app.codacy.com/gh/freshskates/Encryption-Testing-Zone?utm_source=github.com&utm_medium=referral&utm_content=freshskates/Encryption-Testing-Zone&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/36bdc7a4e07f4590a9be8de0fa579037)](https://www.codacy.com/gh/freshskates/Encryption-Testing-Zone/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=freshskates/Encryption-Testing-Zone&amp;utm_campaign=Badge_Grade)
